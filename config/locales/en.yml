@@ -3,6 +3,10 @@ en:
     users_controller:
       message: "Welcome to the Sample App!"
       user_not_found: "Error: User not found"
+      profile_update: "Profile updated"
+      user_delete: "User deleted"
+      please_login: "Please log in."
+      delete_fail: "Delete fail"
     sessions_controller:
       message_error: "Invalid email/password combination"
   layouts:
@@ -36,19 +40,30 @@ en:
       content_3: "To get help on this sample app, see the"
       content_4: "Ruby on Rails Tutorial book"
   users:
-    error404:
-      error404: "Error 404: Not Found"
+    index:
+      all_users: "All users"
+      base: "Ruby on Rails Tutorial Sample App"
+    _user:
+      delete: "delete"
+      sure: "You sure?"
+    edit:
+      base: "Ruby on Rails Tutorial Sample App"
+      save_change: "Save changes"
+      edit_user: "Edit user"
+      h1_tag: "Update your profile"
+      change: "Change"
     new:
       title: "Sign up"
       base: "Ruby on Rails Tutorial Sample App"
       h1_tag: "Sign up"
+      button_create: "Create my account"
+    show:
+      base: "Ruby on Rails Tutorial Sample App"
+    _form:
       name: "Name"
       email: "Email"
       password: "Password"
       confirm_password: "Confirmation"
-      button_create: "Create my account"
-    show:
-      base: "Ruby on Rails Tutorial Sample App"
   shared:
     _error_messages:
       content: "The form contain"
@@ -62,4 +77,3 @@ en:
       sign_up: "Sign up now!"
       base: "Ruby on Rails Tutorial Sample App"
       remember: "Remember me on this computer"
-
