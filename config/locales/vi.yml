@@ -2,7 +2,15 @@ vi:
   mailers:
     user_mailer:
       active: "Kích hoạt tài khoản"
+      reset_pass: "Đặt lại mật khẩu"
   controllers:
+    password_resets_controller:
+      notfound: "Không tìm thấy"
+      send_email: "Vào email để kích hoạt thay đổi mật khẩu"
+      not_found_email: "Địa chỉ email không tìm thấy"
+      not_empty: "Không được để trống"
+      done_reset: "Mật khẩu đã được thay đổi."
+      expired_reset: "Hết hạn đặt lại mật khẩu."
     account_activations_controller:
       actived: "Tài khoản đã được kích hoạt!"
       no_actived: "Liên kết không đúng"
@@ -77,6 +85,7 @@ vi:
       error: "lỗi"
   sessions:
     new:
+      forget: "(Quên mật khẩu)"
       log_in: "Đăng nhập"
       email: "Địa chỉ email"
       password: "Mật khẩu"
@@ -85,8 +94,26 @@ vi:
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
       remember: "Ghi nhớ trên thiết bị này"
   user_mailer:
+    h1_password: "Tạo lại mật khẩu"
+    content_pass_1: "Để đặt lại mật khẩu bạn kích vào link bên dưới:"
+    content_pass_2: "Đường link này có thời hạn 2 tiếng."
+    content_pass_3: "Nếu bạn không phải là người gửi yêu cầu thay đổi,
+    thì hãy bỏ qua mail này."
+    reset_password: "Đặt lại mật khẩu"
     title: "Ứng dụng mẫu"
     hi: "Xin chào"
     active: "Kích hoạt"
     content: "Chào mừng đến với ứng dụng mẫu!
     Bấm vào nút kích hoạt bên dưới để kích hoạt tài khoản của bạn:"
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+      email: "Địa chỉ email"
+      submit: "Gửi đi"
+    edit:
+      title: "Thay đổi mật khẩu"
+      base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+      password: "Mật khẩu"
+      confirm_password: "Xác nhận mật khẩu"
+      submit: "Cập nhật mật khẩu"

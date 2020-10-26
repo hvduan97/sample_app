@@ -4,3 +4,4 @@ maximum_user: 50
 size_avt: 80
 page: 5
 email_mailer: "noreply@example.com"
+time_reset_pass: 2
