@@ -1,14 +1,21 @@
 en:
+  mailers:
+    user_mailer:
+      active: "Account activation"
   controllers:
+    account_activations_controller:
+      actived: "Account activated!"
+      no_actived: "Invalid activation link"
     users_controller:
       message: "Welcome to the Sample App!"
       user_not_found: "Error: User not found"
       profile_update: "Profile updated"
       user_delete: "User deleted"
       please_login: "Please log in."
-      delete_fail: "Delete fail"
+      alert: "Please check your email to activate your account."
     sessions_controller:
       message_error: "Invalid email/password combination"
+      message: "Account not activated. Check your email for the activation link."
   layouts:
     _header:
       sample_app: "sample app"
@@ -77,3 +84,9 @@ en:
       sign_up: "Sign up now!"
       base: "Ruby on Rails Tutorial Sample App"
       remember: "Remember me on this computer"
+  user_mailer:
+    title: "Sample App"
+    hi: "Hi"
+    active: "Active"
+    content: "Welcome to the Sample App!
+    Click on the link below to activate your account:"
