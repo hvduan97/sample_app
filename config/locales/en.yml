@@ -61,4 +61,5 @@ en:
       new_user: "New user?"
       sign_up: "Sign up now!"
       base: "Ruby on Rails Tutorial Sample App"
+      remember: "Remember me on this computer"
 
