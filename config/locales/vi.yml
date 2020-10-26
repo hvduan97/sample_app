@@ -1,9 +1,23 @@
 vi:
+  javascript:
+    packs:
+      micropost_form:
+        alert: "Tệp tối đa là 5MB. Xin hãy chọn file nhỏ hơn"
+  models:
+    micropost:
+      mess_image: "ảnh chưa đúng định dạng"
+      message_size_image: "ảnh nên nhỏ hơn 5MB"
   mailers:
     user_mailer:
       active: "Kích hoạt tài khoản"
       reset_pass: "Đặt lại mật khẩu"
   controllers:
+    microposts_controller:
+      create: "Đã tạo bài đăng mới!"
+      delete: "Bài đăng đã được xóa"
+      delete_fail: "Xóa thất bại"
+    application_controller:
+      please_login: "Xin hãy đăng nhập."
     password_resets_controller:
       notfound: "Không tìm thấy"
       send_email: "Vào email để kích hoạt thay đổi mật khẩu"
@@ -21,6 +35,7 @@ vi:
       user_delete: "Xóa người dùng"
       please_login: "Xin hãy đăng nhập."
       alert: "Xin hãy kiểm tra email để kích hoạt tài khoản"
+      delete_fail: "Xóa thất bại"
     sessions_controller:
       message_error: "Sai địa chỉ email/ Mật khẩu không hợp lệ"
       message: "Tài khoản chưa kích hoạt. Hãy kiểm tra email."
@@ -40,6 +55,7 @@ vi:
       vietnamese: "Tiếng việt"
   static_pages:
     home:
+      fead: "Các bài đăng"
       title: "Trang chủ"
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
       h1_tag: "Chào mừng đến với ứng dụng"
@@ -73,6 +89,7 @@ vi:
       h1_tag: "Đăng kí tài khoản"
       button_create: "Tạo tài khoản"
     show:
+      micropost: "Các bài đăng"
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
     _form:
       name: "Tên người dùng"
@@ -80,6 +97,12 @@ vi:
       password: "Mật khẩu"
       confirm_password: "Xác nhận lại mật khẩu"
   shared:
+    _user_info:
+      view_profile: "Xem thông tin cá nhân"
+      micropost: "bài viết"
+    _micropost_form:
+      new_post: "Đăng bài mới..."
+      post_button: "Đăng"
     _error_messages:
       content: "Phần đăng kí của bạn có"
       error: "lỗi"
@@ -117,3 +140,9 @@ vi:
       password: "Mật khẩu"
       confirm_password: "Xác nhận mật khẩu"
       submit: "Cập nhật mật khẩu"
+  microposts:
+    _micropost:
+      delete: "xóa"
+      sure: "Bạn có chắc chắn muốn xóa?"
+      posted: "Đã đăng"
+      ago: "trước đó."

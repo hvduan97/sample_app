@@ -12,7 +12,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.recent_posts.paginate(page:
+      params[:page]).per_page(Settings.count_post)
+  end
 
   def create
     @user = User.new user_params
@@ -52,16 +55,8 @@ class UsersController < ApplicationController
                                  :password_confirmation)
   end
 
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "controllers.users_controller.please_login"
-    redirect_to login_url
-  end
-
   def correct_user
-    redirect_to(root_url) unless current_user? @user
+    redirect_to(root_url) unless current_user?(@user)
   end
 
   def admin_user

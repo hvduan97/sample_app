@@ -1,9 +1,23 @@
 en:
+  javascript:
+    packs:
+      micropost_form:
+        alert: "Maximum file size is 5MB. Please choose a smaller file."
+  models:
+    micropost:
+      mess_image: "must be a valid image format"
+      message_size_image: "should be less than 5MB"
   mailers:
     user_mailer:
       active: "Account activation"
       reset_pass: "Password reset"
   controllers:
+    microposts_controller:
+      create: "Micropost created!"
+      delete: "Micropost deleted"
+      delete_fail: "Delete fail"
+    application_controller:
+      please_login: "Please log in."
     password_resets_controller:
       notfound: "Not Found"
       send_email: "Email sent with password reset instructions"
@@ -21,6 +35,7 @@ en:
       user_delete: "User deleted"
       please_login: "Please log in."
       alert: "Please check your email to activate your account."
+      delete_fail: "Delte fail"
     sessions_controller:
       message_error: "Invalid email/password combination"
       message: "Account not activated. Check your email for the activation link."
@@ -40,6 +55,7 @@ en:
       vietnamese: "Vietnamese"
   static_pages:
     home:
+      fead: "Micropost Feed"
       title: "Home"
       base: "Ruby on Rails Tutorial Sample App"
       h1_tag: "Welcome to the Sample App"
@@ -73,6 +89,7 @@ en:
       h1_tag: "Sign up"
       button_create: "Create my account"
     show:
+      micropost: "Microposts"
       base: "Ruby on Rails Tutorial Sample App"
     _form:
       name: "Name"
@@ -80,6 +97,12 @@ en:
       password: "Password"
       confirm_password: "Confirmation"
   shared:
+    _user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
+    _micropost_form:
+      new_post: "Compose new micropost..."
+      post_button: "Post"
     _error_messages:
       content: "The form contain"
       error: "error"
@@ -117,3 +140,9 @@ en:
       password: "Password"
       confirm_password: "Confirmation"
       submit: "Update password"
+  microposts:
+    _micropost:
+      delete: "delete"
+      sure: "You sure?"
+      posted: "Posted"
+      ago: "ago."
