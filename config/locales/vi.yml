@@ -3,12 +3,19 @@ vi:
     users_controller:
       message: "Chào mừng đến với ứng dụng mẫu!"
       user_not_found: "Lỗi: Không tìm thấy người dùng"
+    sessions_controller:
+      message_error: "Sai địa chỉ email/ Mật khẩu không hợp lệ"
   layouts:
     _header:
       sample_app: "ứng dụng mẫu"
       home: "Trang chủ"
       help: "Giúp đỡ"
-      log_in: "Đăng kí"
+      log_in: "Đăng nhập"
+      users: "Người dùng"
+      profile: "Thông tin cá nhân"
+      setting: "Cài đặt"
+      log_out: "Đăng xuất"
+      account: "Tài khoản"
     application:
       english: "Tiếng anh"
       vietnamese: "Tiếng việt"
@@ -46,3 +53,11 @@ vi:
     _error_messages:
       content: "Phần đăng kí của bạn có"
       error: "lỗi"
+  sessions:
+    new:
+      log_in: "Đăng nhập"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      new_user: "Bạn là người dùng mới?"
+      sign_up: "Hãy đăng kí ngay!"
+      base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
