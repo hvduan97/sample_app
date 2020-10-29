@@ -1,27 +1,49 @@
 en:
+  controllers:
+    users_controller:
+      message: "Welcome to the Sample App!"
+      user_not_found: "Error: User not found"
   layouts:
     _header:
       sample_app: "sample app"
       home: "Home"
       help: "Help"
       log_in: "Log in"
+    application:
+      english: "English"
+      vietnamese: "Vietnamese"
   static_pages:
     home:
       title: "Home"
       base: "Ruby on Rails Tutorial Sample App"
       h1_tag: "Welcome to the Sample App"
-      english: "English"
-      vietnamese: "Vietnamese"
       signup: "Sign up now!"
       content_1: "This is the home page for the"
       content_2: "Ruby on Rails Tutorial"
     help:
       title: "Help"
       base: "Ruby on Rails Tutorial Sample App"
-      english: "English"
-      vietnamese: "Vietnamese"
       h1_tag: "Help"
       content_1: "Get help on the Ruby on Rails Tutorial at the"
       content_2: "Rails Tutorial help page"
       content_3: "To get help on this sample app, see the"
       content_4: "Ruby on Rails Tutorial book"
+  users:
+    error404:
+      error404: "Error 404: Not Found"
+    new:
+      title: "Sign up"
+      base: "Ruby on Rails Tutorial Sample App"
+      h1_tag: "Sign up"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirm_password: "Confirmation"
+      button_create: "Create my account"
+    show:
+      base: "Ruby on Rails Tutorial Sample App"
+  shared:
+    _error_messages:
+      content: "The form contain"
+      error: "error"
+

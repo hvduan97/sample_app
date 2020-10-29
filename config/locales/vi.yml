@@ -1,27 +1,48 @@
 vi:
+  controllers:
+    users_controller:
+      message: "Chào mừng đến với ứng dụng mẫu!"
+      user_not_found: "Lỗi: Không tìm thấy người dùng"
   layouts:
     _header:
       sample_app: "ứng dụng mẫu"
       home: "Trang chủ"
       help: "Giúp đỡ"
       log_in: "Đăng kí"
+    application:
+      english: "Tiếng anh"
+      vietnamese: "Tiếng việt"
   static_pages:
     home:
       title: "Trang chủ"
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
       h1_tag: "Chào mừng đến với ứng dụng"
-      english: "Tiếng anh"
-      vietnamese: "Tiếng việt"
       signup: "Đăng nhập ngay!"
       content_1: "Đây là trang chủ của"
       content_2: "trang hướng dẫn Ruby on Rails"
     help:
       title: "Giúp đỡ"
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
-      english: "Tiếng anh"
-      vietnamese: "Tiếng việt"
       h1_tag: "Giúp đỡ"
       content_1: "Nhận sự hướng dẫn về Ruby on Rails tại"
       content_2: "trang trợ giúp Rails"
       content_3: "Để nhận được sự giúp đỡ về ứng dụng mẫu, hãy xem"
       content_4: "Sách Ruby on Rails"
+  users:
+    error404:
+      error404: "Lỗi 404: Không tìm thấy"
+    new:
+      title: "Đăng kí"
+      base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+      h1_tag: "Đăng kí tài khoản"
+      name: "Tên người dùng"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      confirm_password: "Xác nhận lại mật khẩu"
+      button_create: "Tạo tài khoản"
+    show:
+      base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+  shared:
+    _error_messages:
+      content: "Phần đăng kí của bạn có"
+      error: "lỗi"
