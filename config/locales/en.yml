@@ -3,12 +3,19 @@ en:
     users_controller:
       message: "Welcome to the Sample App!"
       user_not_found: "Error: User not found"
+    sessions_controller:
+      message_error: "Invalid email/password combination"
   layouts:
     _header:
       sample_app: "sample app"
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      users: "Users"
+      profile: "Profile"
+      setting: "Setting"
+      log_out: "Log out"
+      account: "Account"
     application:
       english: "English"
       vietnamese: "Vietnamese"
@@ -46,4 +53,12 @@ en:
     _error_messages:
       content: "The form contain"
       error: "error"
+  sessions:
+    new:
+      log_in: "Log in"
+      email: "Email"
+      password: "Password"
+      new_user: "New user?"
+      sign_up: "Sign up now!"
+      base: "Ruby on Rails Tutorial Sample App"
 
