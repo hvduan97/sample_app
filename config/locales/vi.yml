@@ -24,7 +24,7 @@ vi:
       title: "Trang chủ"
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
       h1_tag: "Chào mừng đến với ứng dụng"
-      signup: "Đăng nhập ngay!"
+      signup: "Đăng kí ngay!"
       content_1: "Đây là trang chủ của"
       content_2: "trang hướng dẫn Ruby on Rails"
     help:
@@ -61,3 +61,4 @@ vi:
       new_user: "Bạn là người dùng mới?"
       sign_up: "Hãy đăng kí ngay!"
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+      remember: "Ghi nhớ trên thiết bị này"
