@@ -1,14 +1,21 @@
 vi:
+  mailers:
+    user_mailer:
+      active: "Kích hoạt tài khoản"
   controllers:
+    account_activations_controller:
+      actived: "Tài khoản đã được kích hoạt!"
+      no_actived: "Liên kết không đúng"
     users_controller:
       message: "Chào mừng đến với ứng dụng mẫu!"
       user_not_found: "Lỗi: Không tìm thấy người dùng"
-      profile_update: "Cập nhật thông tin"
-      user_delete: "Người dùng đã xóa"
+      profile_update: "Cập nhật thông tin cá nhân"
+      user_delete: "Xóa người dùng"
       please_login: "Xin hãy đăng nhập."
-      delete_fail: "Xóa thất bại"
+      alert: "Xin hãy kiểm tra email để kích hoạt tài khoản"
     sessions_controller:
       message_error: "Sai địa chỉ email/ Mật khẩu không hợp lệ"
+      message: "Tài khoản chưa kích hoạt. Hãy kiểm tra email."
   layouts:
     _header:
       sample_app: "ứng dụng mẫu"
@@ -77,3 +84,9 @@ vi:
       sign_up: "Hãy đăng kí ngay!"
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
       remember: "Ghi nhớ trên thiết bị này"
+  user_mailer:
+    title: "Ứng dụng mẫu"
+    hi: "Xin chào"
+    active: "Kích hoạt"
+    content: "Chào mừng đến với ứng dụng mẫu!
+    Bấm vào nút kích hoạt bên dưới để kích hoạt tài khoản của bạn:"
