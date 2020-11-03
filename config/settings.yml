@@ -1,3 +1,5 @@
 minimum_password: 6
 maximum_email: 255
 maximum_user: 50
+size_avt: 80
+page: 5

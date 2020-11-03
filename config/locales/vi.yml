@@ -3,6 +3,10 @@ vi:
     users_controller:
       message: "Chào mừng đến với ứng dụng mẫu!"
       user_not_found: "Lỗi: Không tìm thấy người dùng"
+      profile_update: "Cập nhật thông tin"
+      user_delete: "Người dùng đã xóa"
+      please_login: "Xin hãy đăng nhập."
+      delete_fail: "Xóa thất bại"
     sessions_controller:
       message_error: "Sai địa chỉ email/ Mật khẩu không hợp lệ"
   layouts:
@@ -36,19 +40,30 @@ vi:
       content_3: "Để nhận được sự giúp đỡ về ứng dụng mẫu, hãy xem"
       content_4: "Sách Ruby on Rails"
   users:
-    error404:
-      error404: "Lỗi 404: Không tìm thấy"
+    index:
+      all_users: "Tất cả người dùng"
+      base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+    _user:
+      delete: "xóa"
+      sure: "Bạn có chắc chắn muốn xóa?"
+    edit:
+      save_change: "Lưu thay đổi"
+      edit_user: "Cập nhật"
+      h1_tag: "Cập nhật thông tin người dùng"
+      change: "Thay đổi"
+      base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
     new:
       title: "Đăng kí"
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
       h1_tag: "Đăng kí tài khoản"
+      button_create: "Tạo tài khoản"
+    show:
+      base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+    _form:
       name: "Tên người dùng"
       email: "Địa chỉ email"
       password: "Mật khẩu"
       confirm_password: "Xác nhận lại mật khẩu"
-      button_create: "Tạo tài khoản"
-    show:
-      base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
   shared:
     _error_messages:
       content: "Phần đăng kí của bạn có"
