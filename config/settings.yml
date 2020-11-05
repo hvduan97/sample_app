@@ -5,3 +5,9 @@ size_avt: 80
 page: 5
 email_mailer: "noreply@example.com"
 time_reset_pass: 2
+count_post: 20
+max_content_micropost: 140
+size_image_micropost: 5
+resize_limit_image: 500
+gravata_size_micropost: 50
+accept_image: "image/jpeg,image/gif,image/png"
