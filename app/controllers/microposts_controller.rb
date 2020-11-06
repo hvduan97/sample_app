@@ -8,7 +8,7 @@ class MicropostsController < ApplicationController
       flash[:success] = t "controllers.microposts_controller.create"
       redirect_to root_path
     else
-      @feed_items = current_user.feed.page(params[:page]).per Settings.page
+      @feed_items = current_user.feed.page(params[:page])
       render "static_pages/home"
     end
   end
@@ -25,7 +25,7 @@ class MicropostsController < ApplicationController
   private
 
   def micropost_params
-    params.require(:micropost).permit :content, :picture
+    params.require(:micropost).permit :content, :image
   end
 
   def correct_user

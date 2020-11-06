@@ -11,3 +11,6 @@ size_image_micropost: 5
 resize_limit_image: 500
 gravata_size_micropost: 50
 accept_image: "image/jpeg,image/gif,image/png"
+size_picture: 30
+size_picture_gra: 50
+type_image: "image/jpeg,image/gif,image/png"

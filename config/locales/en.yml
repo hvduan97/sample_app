@@ -5,13 +5,16 @@ en:
         alert: "Maximum file size is 5MB. Please choose a smaller file."
   models:
     micropost:
-      mess_image: "must be a valid image format"
-      message_size_image: "should be less than 5MB"
+      content: "must be a valid image format"
+      size_image: "should be less than 5MB"
   mailers:
     user_mailer:
       active: "Account activation"
       reset_pass: "Password reset"
   controllers:
+    relationships_controller:
+      not_found: "Not found"
+      no_relationship: "Not found"
     microposts_controller:
       create: "Micropost created!"
       delete: "Micropost deleted"
@@ -71,6 +74,13 @@ en:
       content_3: "To get help on this sample app, see the"
       content_4: "Ruby on Rails Tutorial book"
   users:
+    show_follow:
+      view_profile: "View my profile"
+      microposts: "Microposts"
+    _follow:
+      follow: "Follow"
+    _unfollow:
+      unfollow: "Unfollow"
     index:
       all_users: "All users"
       base: "Ruby on Rails Tutorial Sample App"
@@ -97,6 +107,9 @@ en:
       password: "Password"
       confirm_password: "Confirmation"
   shared:
+    _stats:
+      following: "Following"
+      followers: "Followers"
     _user_info:
       view_profile: "view my profile"
       micropost: "micropost"

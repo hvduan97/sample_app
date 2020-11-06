@@ -1,5 +1,5 @@
 <li>
-  <%= gravatar_for user, size: 50 %>
+  <%= gravatar_for user, size: Settings.size_picture_gra %>
   <%= link_to user.name, user %>
   <% if check_user?(user) %>
     | <%= link_to t("users._user.delete"), user, method: :delete,

@@ -5,13 +5,16 @@ vi:
         alert: "Tệp tối đa là 5MB. Xin hãy chọn file nhỏ hơn"
   models:
     micropost:
-      mess_image: "ảnh chưa đúng định dạng"
-      message_size_image: "ảnh nên nhỏ hơn 5MB"
+      content: "ảnh chưa đúng định dạng"
+      size_image: "ảnh nên nhỏ hơn 5MB"
   mailers:
     user_mailer:
       active: "Kích hoạt tài khoản"
       reset_pass: "Đặt lại mật khẩu"
   controllers:
+    relationships_controller:
+      not_found: "Không tìm thấy"
+      no_relationship: "Không tìm thấy"
     microposts_controller:
       create: "Đã tạo bài đăng mới!"
       delete: "Bài đăng đã được xóa"
@@ -71,6 +74,13 @@ vi:
       content_3: "Để nhận được sự giúp đỡ về ứng dụng mẫu, hãy xem"
       content_4: "Sách Ruby on Rails"
   users:
+    show_follow:
+      view_profile: "Xem thông tin cá nhân"
+      microposts: "Bài viết"
+    _follow:
+      follow: "Theo dõi"
+    _unfollow:
+      unfollow: "Bỏ theo dõi"
     index:
       all_users: "Tất cả người dùng"
       base: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
@@ -97,6 +107,9 @@ vi:
       password: "Mật khẩu"
       confirm_password: "Xác nhận lại mật khẩu"
   shared:
+    _stats:
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
     _user_info:
       view_profile: "Xem thông tin cá nhân"
       micropost: "bài viết"
